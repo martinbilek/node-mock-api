@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "main": "src/server",
-  "scripts": {},
+  "scripts": {
+    "start": "NODE_PATH=src NODE_ENV=dev nodemon src/"
+  },
   "dependencies": {
     "bluebird": "^3.3.5",
     "body-parser": "^1.15.0",
