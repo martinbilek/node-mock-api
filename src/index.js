@@ -1,9 +1,9 @@
 'use strict';
 
 var _ = Promise = require('bluebird'),
-    server = require('server'),
-    logging = require('logging.js'),
-    config = require('config');
+    server = require('./server'),
+    logging = require('./logging.js'),
+    config = require('./config');
 
 var app = {
     config: config,

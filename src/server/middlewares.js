@@ -1,8 +1,8 @@
 'use strict';
 
-var config = require('config'),
-    logger = require('logging').createLogger(),
-    httpErrors = require('server/http.errors');
+var config = require('../config'),
+    logger = require('../logging').createLogger(),
+    httpErrors = require('./http.errors');
 
 function notFoundHandler(req, res, next) {
     throw new httpErrors.NotFoundError('The requested resource "' + req.url + '" was not found.');

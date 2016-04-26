@@ -2,8 +2,8 @@
 
 var express = require('express'),
     bodyParser = require('body-parser'),
-    httpErrors = require('server/http.errors'),
-    middlewares = require('server/middlewares'),
+    httpErrors = require('./http.errors'),
+    middlewares = require('./middlewares'),
     cors = require('cors');
 
 /*
@@ -11,8 +11,8 @@ var express = require('express'),
  * @return the created server
  */
 module.exports = function build() {
-    var routes = require('routes'),
-        config = require('config');
+    var routes = require('../routes'),
+        config = require('../config');
 
     // Create new Restify server
     var server = express()
