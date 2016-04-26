@@ -29,5 +29,7 @@ Now browse to the app at `http://localhost:8989/`.
 #### Example URLs:
 
 GET `http://localhost:8989/heroes/`  # get list of heroes
+
 GET `http://localhost:8989/heroes/15`  # get detail of hero with id 15
+
 POST `http://localhost:8989/heroes/15`  # update hero with id 15
